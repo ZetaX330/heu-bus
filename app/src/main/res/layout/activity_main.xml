@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity1">
+    tools:ignore="SpeakableTextPresentCheck"
+
+    <TextView
+        android:id="@+id/heu_text"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:text="HEU"
+        android:textColor="#1296db"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bus_text"
+        android:layout_width="149dp"
+        android:layout_height="48dp"
+        android:text="校园巴士"
+        android:textColor="#1296db"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/heu_text"
+        app:layout_constraintStart_toStartOf="@+id/heu_text"
+        app:layout_constraintTop_toBottomOf="@+id/heu_text"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/account_editText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:hint="账号"
+        android:inputType="number"
+        android:lines="1"
+        android:maxLength="15"
+        app:layout_constraintBottom_toBottomOf="@+id/accout_image"
+        app:layout_constraintStart_toEndOf="@+id/accout_image"
+        app:layout_constraintTop_toTopOf="@+id/accout_image"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/password_editText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="密码"
+        android:lines="1"
+        android:maxLength="15"
+        app:layout_constraintBottom_toBottomOf="@+id/password_image"
+        app:layout_constraintEnd_toEndOf="@+id/account_editText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/account_editText"
+        app:layout_constraintTop_toTopOf="@+id/password_image"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="Deprecated" />
+
+    <ImageView
+        android:id="@+id/accout_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="68dp"
+        android:src="@drawable/account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243" />
+
+    <ImageView
+        android:id="@+id/password_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/password"
+        app:layout_constraintEnd_toStartOf="@+id/password_editText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/accout_image"
+        app:layout_constraintTop_toBottomOf="@+id/accout_image" />
+
+    <ImageView
+        android:id="@+id/password_visible_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password_editText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/password_image"
+        app:layout_constraintTop_toTopOf="@+id/password_editText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/log_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/log"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531" />
+
+    <ImageView
+        android:id="@id/account_delete_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="200dp"
+        android:background="@drawable/delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/account_editText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/accout_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246" />
+
+    <ImageView
+        android:id="@+id/bus_image"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="11dp"
+        android:src="@drawable/bus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bus_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+</androidx.constraintlayout.widget.ConstraintLayout>
